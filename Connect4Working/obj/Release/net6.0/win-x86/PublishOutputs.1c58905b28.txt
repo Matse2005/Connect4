@@ -1,0 +1,2 @@
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\bin\Release\net6.0\publish\win-x86\Connect4Working.pdb
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\bin\Release\net6.0\publish\win-x86\Connect4Working.exe

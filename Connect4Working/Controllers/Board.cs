@@ -10,7 +10,6 @@ namespace Connect4.Controllers
         public void setBoard(BoardModel boardModel)
         {
             this.createBoard(boardModel, this.getColumns(boardModel), this.getRows(boardModel));
-
             return;
         }
 
@@ -24,7 +23,7 @@ namespace Connect4.Controllers
                 boardView.getColumns();
             } while (!int.TryParse(Console.ReadLine(), out columns));
 
-            boardModel.Columns = columns;
+            boardModel.columns = columns;
             return columns;
         }
 
@@ -38,7 +37,7 @@ namespace Connect4.Controllers
                 boardView.getRows();
             } while (!int.TryParse(Console.ReadLine(), out rows));
 
-            boardModel.Rows = rows;
+            boardModel.rows = rows;
             return rows;
         }
 
@@ -46,11 +45,11 @@ namespace Connect4.Controllers
         {
             string[,] board = new string[columns, rows];
 
-            for (int i = 0; i < columns; i++)
+            for (int column = 0; column < columns; column++)
             {
-                for (int j = 0; j < rows; j++)
+                for (int row = 0; row < rows; row++)
                 {
-                    board[i, j] = "■";
+                    board[column, row] = "■";
                 }
             }
 

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MSwzjfC+UwA8mHr1zDoir3yQPxP/THg1pM/uEJxGOdVx0e3G8SnQBs/7D8a4j6iWkCIJn7Jlvu2UYGYizdYK+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MatseVanHorebeek\\Projects\\Connect4Working\\Connect4Working\\Connect4Working.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MatseVanHorebeek\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.11\\microsoft.netcore.app.runtime.win-x86.6.0.11.nupkg.sha512",
+    "C:\\Users\\MatseVanHorebeek\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.11\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.11.nupkg.sha512",
+    "C:\\Users\\MatseVanHorebeek\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.11\\microsoft.aspnetcore.app.runtime.win-x86.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -28,8 +28,8 @@ namespace Connect4.Controllers
             do
             {
                 Console.WriteLine();
-                gameView.Turn(player.playerName, boardModel.Columns);
-            } while (!int.TryParse(Console.ReadLine(), out column) || column > boardModel.Columns);
+                gameView.Turn(player.playerName, boardModel.columns);
+            } while (!int.TryParse(Console.ReadLine(), out column) || column > boardModel.columns);
 
             return column;
         }
@@ -47,9 +47,9 @@ namespace Connect4.Controllers
 
         public bool BoardFull(BoardModel boardModel)
         {
-            for (int i = 0; i < boardModel.columns; i++)
+            for (int column = 0; column < boardModel.columns; column++)
             {
-                if (boardModel.Get()[i, 0] != "X" && boardModel.Get()[i, 0] != "O") return false;
+                if (boardModel.Get()[column, 0] != "X" && boardModel.Get()[column, 0] != "O") return false;
             }
 
             return true;
@@ -57,12 +57,11 @@ namespace Connect4.Controllers
 
         public static void SetTurn(PlayersModel player, BoardModel boardModel, int column)
         {
-            for (int i = boardModel.rows - 1; i >= 0; i--)
+            for (int row = boardModel.rows - 1; row >= 0; row--)
             {
-                if (boardModel.Get()[column - 1, i] != "X" && boardModel.Get()[column - 1, i] != "O")
+                if (boardModel.Get()[column - 1, row] != "X" && boardModel.Get()[column - 1, row] != "O")
                 {
-                    Console.WriteLine("nummer " + boardModel.Get()[column - 1, i]);
-                    boardModel.Edit(player.playerChar, column, i);
+                    boardModel.Edit(player.playerChar, column, row);
                     return;
                 }
             }
@@ -71,9 +70,58 @@ namespace Connect4.Controllers
 
         public bool CheckFour(BoardModel boardModel, PlayersModel player)
         {
+            for (int column = 0; column < boardModel.columns; column++)
+            {
+                for (int row = 0; row < boardModel.rows; row++)
+                {
+                    // Horizontal
+                    if (column + 3 < boardModel.columns)
+                    {
+                        if (boardModel.Get()[column, row] == player.playerChar.ToString() &&
+                            boardModel.Get()[column + 1, row] == player.playerChar.ToString() &&
+                            boardModel.Get()[column + 2, row] == player.playerChar.ToString() &&
+                            boardModel.Get()[column + 3, row] == player.playerChar.ToString())
+                        { return true; }
+                    }
 
+                    // Vertical
+                    if (row + 3 < boardModel.rows)
+                    {
+                        if (boardModel.Get()[column, row] == player.playerChar.ToString() &&
+                        boardModel.Get()[column, row + 1] == player.playerChar.ToString() &&
+                        boardModel.Get()[column, row + 2] == player.playerChar.ToString() &&
+                        boardModel.Get()[column, row + 3] == player.playerChar.ToString())
+                        { return true; }
+                    }
+
+                    // Diagonal up
+                    if (column - 3 >= 0 && row + 3 < boardModel.rows)
+                    {
+                        if (boardModel.Get()[column, row] == player.playerChar.ToString() &&
+                        boardModel.Get()[column - 1, row + 1] == player.playerChar.ToString() &&
+                        boardModel.Get()[column - 2, row + 2] == player.playerChar.ToString() &&
+                        boardModel.Get()[column - 3, row + 3] == player.playerChar.ToString())
+                        { return true; }
+                    }
+
+                    // Diagonal down
+                    if (column + 3 < boardModel.columns && row + 3 < boardModel.rows)
+                    {
+                        if (boardModel.Get()[column, row] == player.playerChar.ToString() &&
+                        boardModel.Get()[column + 1, row + 1] == player.playerChar.ToString() &&
+                        boardModel.Get()[column + 2, row + 2] == player.playerChar.ToString() &&
+                        boardModel.Get()[column + 3, row + 3] == player.playerChar.ToString())
+                        { return true; }
+                    }
+                }
+            }
 
             return false;
+        }
+
+        public void end()
+        {
+
         }
     }
 }

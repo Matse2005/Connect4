@@ -68,6 +68,10 @@ do
      */
     if (gameController.CheckFour(boardModel, playerOne))
     {
+        Console.Clear();
+        boardView.draw(boardModel);
+
+        Console.WriteLine();
         gameView.Win(playerOne.playerName);
         again = false;
         return;
@@ -78,6 +82,10 @@ do
      */
     if (gameController.BoardFull(boardModel))
     {
+        Console.Clear();
+        boardView.draw(boardModel);
+
+        Console.WriteLine();
         gameView.BoardFull();
         again = false;
         return;
@@ -99,6 +107,10 @@ do
      */
     if (gameController.CheckFour(boardModel, playerTwo))
     {
+        Console.Clear();
+        boardView.draw(boardModel);
+
+        Console.WriteLine();
         gameView.Win(playerTwo.playerName);
         again = false;
         return;
@@ -109,6 +121,10 @@ do
      */
     if (gameController.BoardFull(boardModel))
     {
+        Console.Clear();
+        boardView.draw(boardModel);
+
+        Console.WriteLine();
         gameView.BoardFull();
         again = false;
         return;

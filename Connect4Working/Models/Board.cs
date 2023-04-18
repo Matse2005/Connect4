@@ -13,18 +13,6 @@ namespace Connect4.Models
             return board;
         }
 
-        public int Columns
-        {
-            get { return columns; }
-            set { columns = value; }
-        }
-
-        public int Rows
-        {
-            get { return rows; }
-            set { rows = value; }
-        }
-
         public void Edit(Char playerChar, int column, int row)
         {
             board[column - 1, row] = playerChar.ToString();
