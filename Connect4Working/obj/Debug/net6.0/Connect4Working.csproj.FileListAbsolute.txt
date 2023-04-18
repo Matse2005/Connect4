@@ -1,0 +1,15 @@
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.csproj.AssemblyReference.cache
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.AssemblyInfoInputs.cache
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.AssemblyInfo.cs
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.csproj.CoreCompileInputs.cache
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\bin\Debug\net6.0\Connect4Working.exe
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\bin\Debug\net6.0\Connect4Working.deps.json
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\bin\Debug\net6.0\Connect4Working.runtimeconfig.json
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\bin\Debug\net6.0\Connect4Working.dll
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\bin\Debug\net6.0\Connect4Working.pdb
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.dll
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\refint\Connect4Working.dll
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.pdb
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\Connect4Working.genruntimeconfig.cache
+C:\Users\MatseVanHorebeek\Projects\Connect4Working\Connect4Working\obj\Debug\net6.0\ref\Connect4Working.dll
